@@ -1,0 +1,4 @@
+ARTIFACT_DIR=/target/quarkus-app
+ARTIFACT_COPY_ARGS=-p -r lib/ app/ quarkus/ *-run.jar
+AB_JOLOKIA_OFF=true
+JAVA_OPTIONS=-Dquarkus.http.host=0.0.0.0
