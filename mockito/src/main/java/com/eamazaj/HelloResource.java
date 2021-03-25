@@ -16,7 +16,7 @@ public class HelloResource {
     @Inject
     HelloService helloService;
 
-    @ConfigProperty(name = "username")
+    @ConfigProperty(name = "db.username")
     String username;
 
     @GET
