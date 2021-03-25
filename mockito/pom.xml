@@ -11,6 +11,7 @@
         <maven.compiler.parameters>true</maven.compiler.parameters>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <mockito.version>1.10.19</mockito.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <quarkus-plugin.version>1.12.2.Final</quarkus-plugin.version>
@@ -18,7 +19,6 @@
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
         <quarkus.platform.version>1.12.2.Final</quarkus.platform.version>
         <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
-        <mockito.version>1.10.19</mockito.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -59,7 +59,14 @@
             <artifactId>quarkus-junit5-mockito</artifactId>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-kubernetes-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-openapi</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
