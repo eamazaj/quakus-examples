@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.HashMap;
 import java.util.Map;
 
-@Path("/hello")
+@Path("/api")
 public class HelloResource {
 
     @Inject
@@ -21,6 +21,7 @@ public class HelloResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
+    @Path("/hello")
     public String hello() {
         return helloService.sayHello();
     }

@@ -26,7 +26,7 @@ public class HelloResourceTest {
     public void testHelloEndpoint() {
         Mockito.when(helloService.sayHello()).thenReturn("Hello RESTEasy");
         given()
-                .when().get("/hello")
+                .when().get("/api/hello")
                 .then()
                 .statusCode(200)
                 .body(is("Hello RESTEasy"));
